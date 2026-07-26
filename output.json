@@ -1,0 +1,562 @@
+[
+    {
+        "start": 0.0,
+        "end": 5.5,
+        "text": " So we will be continuing with the stack and queue playlist"
+    },
+    {
+        "start": 5.5,
+        "end": 9.5,
+        "text": " Today we're starting off. Hey everyone come back to the channel. I hope you guys are doing extremely well"
+    },
+    {
+        "start": 9.5,
+        "end": 12.200000000000001,
+        "text": " So the problem that we will be solving today is"
+    },
+    {
+        "start": 12.88,
+        "end": 16.42,
+        "text": " Nearest smaller element, but it was starting off"
+    },
+    {
+        "start": 16.6,
+        "end": 22.26,
+        "text": " Please please make sure that you have seen my video on next greater element"
+    },
+    {
+        "start": 22.38,
+        "end": 26.38,
+        "text": " Please right. So what is the problem statement stating that?"
+    },
+    {
+        "start": 26.38,
+        "end": 34.16,
+        "text": " You're given an array which has integers right now for every element you'll have to tell me the nearest"
+    },
+    {
+        "start": 34.64,
+        "end": 43.36,
+        "text": " smaller element on the left on the left. Yes, that is the question for an example. I'm standing at 4"
+    },
+    {
+        "start": 43.980000000000004,
+        "end": 45.66,
+        "text": " If I look"
+    },
+    {
+        "start": 45.66,
+        "end": 47.66,
+        "text": " To the left, I don't have anything"
+    },
+    {
+        "start": 48.14,
+        "end": 52.620000000000005,
+        "text": " Thereby the nearest smaller element will be minus 1 because I don't have any one. Okay"
+    },
+    {
+        "start": 52.62,
+        "end": 57.199999999999996,
+        "text": " If I'm standing at 5 and if I look to the left, I have 4"
+    },
+    {
+        "start": 57.58,
+        "end": 61.879999999999995,
+        "text": " So I'll write 4 if I stand at 2 and if I look to the left"
+    },
+    {
+        "start": 62.18,
+        "end": 66.46,
+        "text": " Do I have any one? No, I don't have I don't have anyone who's smaller than 2"
+    },
+    {
+        "start": 67.0,
+        "end": 69.0,
+        "text": " Thereby I write minus 1"
+    },
+    {
+        "start": 69.0,
+        "end": 71.84,
+        "text": " If I stand at 2 and if I look to the left"
+    },
+    {
+        "start": 71.84,
+        "end": 77.62,
+        "text": " I have 2 I have 2 thereby I can write 2 if I"
+    },
+    {
+        "start": 77.62,
+        "end": 82.58,
+        "text": " If I stand at 8 is 10 smaller than 8? No"
+    },
+    {
+        "start": 82.58,
+        "end": 84.58,
+        "text": " Is 2 smaller than 8? Yes"
+    },
+    {
+        "start": 84.58,
+        "end": 86.88000000000001,
+        "text": " Thereby 2 can be the answer"
+    },
+    {
+        "start": 86.88000000000001,
+        "end": 91.12,
+        "text": " So this will be my next nearest smaller element"
+    },
+    {
+        "start": 91.12,
+        "end": 93.22,
+        "text": " So this is the array that you'll have to return"
+    },
+    {
+        "start": 93.22,
+        "end": 95.78,
+        "text": " So what is the extreme"
+    },
+    {
+        "start": 95.78,
+        "end": 98.28,
+        "text": " Extreme name solution that you can think of?"
+    },
+    {
+        "start": 98.28,
+        "end": 101.88000000000001,
+        "text": " Stand at every element and look to the left"
+    },
+    {
+        "start": 101.88,
+        "end": 108.14,
+        "text": " Super simple. So what I will do is I'll take next smaller element of size n"
+    },
+    {
+        "start": 108.14,
+        "end": 113.64,
+        "text": " And then I'll iterate over all the element 0 till n minus 1"
+    },
+    {
+        "start": 113.64,
+        "end": 115.47999999999999,
+        "text": " And for every element"
+    },
+    {
+        "start": 115.47999999999999,
+        "end": 120.69999999999999,
+        "text": " I'll start iterating from i minus 1 and backwards till 0"
+    },
+    {
+        "start": 120.69999999999999,
+        "end": 123.8,
+        "text": " And if any element is"
+    },
+    {
+        "start": 123.8,
+        "end": 128.68,
+        "text": " Smaller than very important is smaller than array of i not equal to smaller than"
+    },
+    {
+        "start": 128.68,
+        "end": 136.02,
+        "text": " In that scenario, I'll say ns of nse of i will be array of g and at the same time I can say break"
+    },
+    {
+        "start": 136.02,
+        "end": 139.44,
+        "text": " And that will be done for this for loop and this is done"
+    },
+    {
+        "start": 139.44,
+        "end": 142.84,
+        "text": " And eventually I could end up returning nse"
+    },
+    {
+        "start": 142.84,
+        "end": 145.44,
+        "text": " So this will be my"
+    },
+    {
+        "start": 145.44,
+        "end": 148.08,
+        "text": " Extreme name solution or the brute force"
+    },
+    {
+        "start": 148.08,
+        "end": 150.10000000000002,
+        "text": " So what will be the time complexity?"
+    },
+    {
+        "start": 150.10000000000002,
+        "end": 154.42000000000002,
+        "text": " The time complexity will be definitely b go of n square like somewhere near about that"
+    },
+    {
+        "start": 154.42,
+        "end": 158.48,
+        "text": " And the space complexity is b go of n that I'm using to store the answer"
+    },
+    {
+        "start": 158.48,
+        "end": 160.76,
+        "text": " Now I'm not using it to solve"
+    },
+    {
+        "start": 160.76,
+        "end": 165.54,
+        "text": " It's used to store the answer. Do not modify the input array. It's not recommended"
+    },
+    {
+        "start": 165.54,
+        "end": 169.92,
+        "text": " Okay, so in this scenario the interviewer will not be happy with b go of n square"
+    },
+    {
+        "start": 169.92,
+        "end": 171.48,
+        "text": " And I'll ask you to optimize it"
+    },
+    {
+        "start": 171.48,
+        "end": 176.57999999999998,
+        "text": " So we need to optimize b go of n square and I'm looking for next"
+    },
+    {
+        "start": 176.57999999999998,
+        "end": 179.73999999999998,
+        "text": " Rather nearest smaller element, right?"
+    },
+    {
+        "start": 179.74,
+        "end": 185.84,
+        "text": " So we've already done a similar problem where I was looking for next greater element, okay?"
+    },
+    {
+        "start": 186.20000000000002,
+        "end": 193.20000000000002,
+        "text": " So in the next great element imagine I'm standing at this one as looking towards the right over here"
+    },
+    {
+        "start": 193.20000000000002,
+        "end": 195.86,
+        "text": " I'll be looking towards the left because I'm"
+    },
+    {
+        "start": 196.4,
+        "end": 201.3,
+        "text": " Finding the next or rather nearest smaller element on the left. So I'll be looking towards the left"
+    },
+    {
+        "start": 201.3,
+        "end": 209.24,
+        "text": " So the iteration should start from left the S the iteration should start from the left"
+    },
+    {
+        "start": 209.24,
+        "end": 214.16000000000003,
+        "text": " Perfect. So what I'll do is I'll again take a stack data structure"
+    },
+    {
+        "start": 215.3,
+        "end": 217.3,
+        "text": " The same concept"
+    },
+    {
+        "start": 217.3,
+        "end": 221.24,
+        "text": " I'll be doing an entire dry run this time. We'll be taking a stack data structure"
+    },
+    {
+        "start": 222.24,
+        "end": 224.04000000000002,
+        "text": " When we start off"
+    },
+    {
+        "start": 224.04000000000002,
+        "end": 227.26000000000002,
+        "text": " Do we have anything in the stack? No, so I can straight away say minus"
+    },
+    {
+        "start": 227.26,
+        "end": 233.66,
+        "text": " 1 for this one and I can take 5 and put it into the stack data structure then I can go to the 7"
+    },
+    {
+        "start": 234.62,
+        "end": 240.7,
+        "text": " Now this is where I check the stack and I see that there is 5 which is smaller which is smaller"
+    },
+    {
+        "start": 241.01999999999998,
+        "end": 243.01999999999998,
+        "text": " So I can say 5 is my answer"
+    },
+    {
+        "start": 243.44,
+        "end": 244.85999999999999,
+        "text": " Okay"
+    },
+    {
+        "start": 244.85999999999999,
+        "end": 250.12,
+        "text": " 5 is my answer. Do you take out 5? No, you don't take out rather you insert 7"
+    },
+    {
+        "start": 250.42,
+        "end": 254.78,
+        "text": " You insert 7 and you move to the next which is 9"
+    },
+    {
+        "start": 254.78,
+        "end": 262.14,
+        "text": " Now for 9 when you look in the stack you have a 7 which can be your nearest small element"
+    },
+    {
+        "start": 262.14,
+        "end": 266.96,
+        "text": " So I'm fine with it. I'll say okay 7 is my answer and I'll put on 9"
+    },
+    {
+        "start": 267.56,
+        "end": 273.56,
+        "text": " After that I move to 6 and when I'm moving to 6 remember this time I'm trying"
+    },
+    {
+        "start": 274.32,
+        "end": 278.08,
+        "text": " Increasing order I'm trying an increasing order something like a 5 7 9"
+    },
+    {
+        "start": 278.46,
+        "end": 282.62,
+        "text": " So I'm coming to 6 right if I'm coming to 6 the increasing order will be broken"
+    },
+    {
+        "start": 282.62,
+        "end": 288.54,
+        "text": " So for 6 can 9 be the answer? No. Can 7 be the answer? No. So what I'll do is"
+    },
+    {
+        "start": 288.54,
+        "end": 293.04,
+        "text": " I'll take 9 off then I'll take 7 off and after that I have a 5 which is okay"
+    },
+    {
+        "start": 293.04,
+        "end": 297.5,
+        "text": " 5 will be my answer and I'll put on 6 and I'll move ahead to 7"
+    },
+    {
+        "start": 297.5,
+        "end": 301.02,
+        "text": " At 7 the top element is 6. I'll say 6 is okay"
+    },
+    {
+        "start": 301.02,
+        "end": 303.42,
+        "text": " I'll put on 7 and I'll move forward to 4"
+    },
+    {
+        "start": 303.42,
+        "end": 310.40000000000003,
+        "text": " When I go to 4 I check the stack 7 no 6 no 5 no because all of them are greater"
+    },
+    {
+        "start": 311.02000000000004,
+        "end": 313.58000000000004,
+        "text": " So I'll take out 4 I'll take out all of them and"
+    },
+    {
+        "start": 314.14000000000004,
+        "end": 319.98,
+        "text": " I'll say there's nothing on the stack so minus 1 and then I put a 4 and you can complete the process"
+    },
+    {
+        "start": 320.38,
+        "end": 324.1,
+        "text": " So in this scenario what I did was I did a"
+    },
+    {
+        "start": 324.82,
+        "end": 326.1,
+        "text": " increasing"
+    },
+    {
+        "start": 326.1,
+        "end": 333.32,
+        "text": " Order I did store in increasing order. So this monotonic stack is an increasing is in the increasing order got it"
+    },
+    {
+        "start": 333.42,
+        "end": 340.86,
+        "text": " Why because we are looking for next smaller rather nearest smaller element perfect quite similar to next greater element?"
+    },
+    {
+        "start": 341.1,
+        "end": 345.26,
+        "text": " So I'll do is I'll quickly get into the pseudo code. So I'll have to do a list"
+    },
+    {
+        "start": 346.48,
+        "end": 348.48,
+        "text": " so list of in"
+    },
+    {
+        "start": 348.48,
+        "end": 353.90000000000003,
+        "text": " find maybe nse nse and then I'll have to"
+    },
+    {
+        "start": 354.70000000000005,
+        "end": 360.34000000000003,
+        "text": " Take an array perfect. I take an array. What is my next job? My next"
+    },
+    {
+        "start": 360.34,
+        "end": 364.58,
+        "text": " Uh, our job is to declare an nse of size n"
+    },
+    {
+        "start": 365.14,
+        "end": 367.73999999999995,
+        "text": " What is the next job? Take a stack of?"
+    },
+    {
+        "start": 369.21999999999997,
+        "end": 370.17999999999995,
+        "text": " St"
+    },
+    {
+        "start": 370.17999999999995,
+        "end": 374.96,
+        "text": " Stack st again. This is pseudo code. You could write it in your language. You can find the code below"
+    },
+    {
+        "start": 376.21999999999997,
+        "end": 380.64,
+        "text": " I'll start iterating from forward direction till the last which is n minus 1"
+    },
+    {
+        "start": 381.53999999999996,
+        "end": 383.21999999999997,
+        "text": " And I know one thing"
+    },
+    {
+        "start": 383.21999999999997,
+        "end": 386.67999999999995,
+        "text": " if the stack is non-empty if the stack is"
+    },
+    {
+        "start": 386.68,
+        "end": 391.88,
+        "text": " is non-empty and and the stack dot top is"
+    },
+    {
+        "start": 393.24,
+        "end": 395.88,
+        "text": " Greater than equal to the array of I"
+    },
+    {
+        "start": 396.68,
+        "end": 398.44,
+        "text": " I'm not entertaining any great elements"
+    },
+    {
+        "start": 399.24,
+        "end": 402.36,
+        "text": " I will say stack dot for perfect"
+    },
+    {
+        "start": 403.32,
+        "end": 406.92,
+        "text": " Once this is done. I will say nse of I"
+    },
+    {
+        "start": 407.8,
+        "end": 409.64,
+        "text": " Will be if the stack is empty"
+    },
+    {
+        "start": 409.64,
+        "end": 413.15999999999997,
+        "text": " The stack is nothing then it will be minus one"
+    },
+    {
+        "start": 413.96,
+        "end": 418.36,
+        "text": " Then it will be minus one or I will say it will be stack dot top perfect"
+    },
+    {
+        "start": 418.91999999999996,
+        "end": 421.47999999999996,
+        "text": " After this I will say stack dot push"
+    },
+    {
+        "start": 422.52,
+        "end": 424.52,
+        "text": " array of I"
+    },
+    {
+        "start": 425.32,
+        "end": 429.32,
+        "text": " And then I'll end the for loop and once I'm done with it, I can end"
+    },
+    {
+        "start": 429.96,
+        "end": 433.56,
+        "text": " With returning nse and that is where the function ends"
+    },
+    {
+        "start": 433.96,
+        "end": 436.59999999999997,
+        "text": " It's very important to understand whether you need to traverse forward"
+    },
+    {
+        "start": 437.0,
+        "end": 441.64,
+        "text": " Traverse backward whether you need an increasing stack whether you need a decreasing stack"
+    },
+    {
+        "start": 442.04,
+        "end": 447.4,
+        "text": " That is why I'm doing this problem got it. So what will be the time complexity similar to"
+    },
+    {
+        "start": 448.03999999999996,
+        "end": 450.03999999999996,
+        "text": " Next great elements will not be explaining"
+    },
+    {
+        "start": 450.52,
+        "end": 451.96,
+        "text": " big of 2n"
+    },
+    {
+        "start": 451.96,
+        "end": 456.84,
+        "text": " n for this one and you're popping out at max n elements throughout the journey"
+    },
+    {
+        "start": 457.08,
+        "end": 461.47999999999996,
+        "text": " What about the space complexity a big of n for the stack and a big of n for"
+    },
+    {
+        "start": 462.68,
+        "end": 467.0,
+        "text": " This one again do not modify the given input not recommended"
+    },
+    {
+        "start": 467.56,
+        "end": 470.84,
+        "text": " So this will be it for this one. I hope you have understood everything"
+    },
+    {
+        "start": 471.15999999999997,
+        "end": 476.52,
+        "text": " So if you're still now watching and if you've understood everything, please please do consider giving us a like and if you're new to our channel"
+    },
+    {
+        "start": 476.52,
+        "end": 481.24,
+        "text": " Do consider subscribing to us as well with this. I'll be wrapping up this video. Let's make some other video"
+    }
+]
