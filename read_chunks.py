@@ -1,7 +1,9 @@
 import requests
 import os
 import json
+import numpy as np
 import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
 
 def create_embedding(text):
 
@@ -37,5 +39,21 @@ for json_file in jsons:
         all_chunks.append(chunk)
 
 # print(all_chunks)
+
 df = pd.DataFrame.from_records(all_chunks)
-print(df)
+# print(df)
+
+incoming_query = input("Ask a Question: ")
+question_embedding = create_embedding([incoming_query])[0] # Since create_embedding() returns a list of embeddings
+# print(question_embedding)
+
+# Find Similarity of question_embedding with Other Embeddings
+similarities = cosine_similarity(np.vstack(df['embedding']), [question_embedding]).flatten()
+# print(similarities)
+
+top_results = int(input("Enter the top similarities you want to Fetch: "))
+max_idx = similarities.argsort()[ : : -1][0 : top_results] # Reverse sort and get the top indices
+# print(max_idx)
+
+new_df = df.loc[max_idx]
+print(new_df[["title", "number", "text"]])
